@@ -121,7 +121,7 @@ d3.csv("data/pilot3/bar_cars_10_g1.csv", function(dataTemp) {
     .attr("y", (height / -15))
     .attr("text-anchor", "middle")  
     .style("font-size", "20px")
-    .text("Price by Car Name");
+    .text("Price by Car Name for Brand A");
 
   var barInput = svg.selectAll(".barInput")
     .data(data)
@@ -174,34 +174,34 @@ d3.csv("data/pilot3/bar_cars_10_g1.csv", function(dataTemp) {
       record_hover(event_array, 100);
     });
 
-  var legend = svg.selectAll(".legend")
-    .data(groups)
-    .enter().append("g")
-    .attr("class", "legend")
-    .attr("transform", function(d, i) {
-      return "translate(" + margin.left + "," + i * 20 + ")";
-    })
-    .attr("opacity", 0.7)
-    .style("fill", function(d) {
-      return color(d[keys[0]]);
-    });
+  // var legend = svg.selectAll(".legend")
+  //   .data(groups)
+  //   .enter().append("g")
+  //   .attr("class", "legend")
+  //   .attr("transform", function(d, i) {
+  //     return "translate(" + margin.left + "," + i * 20 + ")";
+  //   })
+  //   .attr("opacity", 0.7)
+  //   .style("fill", function(d) {
+  //     return color(d[keys[0]]);
+  //   });
 
 
-  legend.append("rect")
-    .attr("x", width - 15)
-    .attr("width", 7)
-    .attr("height", 7);
+  // legend.append("rect")
+  //   .attr("x", width - 15)
+  //   .attr("width", 7)
+  //   .attr("height", 7);
 
-  legend.append("text")
-    .attr("x", width - 15)
-    .attr("y", 5)
-    .attr("dx", 10)
-    .attr("dy", 2)
-    .style("text-anchor", "left")
-    .style("fill", "Black")
-    .text(function(d) {
-      return d;
-    });
+  // legend.append("text")
+  //   .attr("x", width - 15)
+  //   .attr("y", 5)
+  //   .attr("dx", 10)
+  //   .attr("dy", 2)
+  //   .style("text-anchor", "left")
+  //   .style("fill", "Black")
+  //   .text(function(d) {
+  //     return d;
+  //   });
 
 });
 

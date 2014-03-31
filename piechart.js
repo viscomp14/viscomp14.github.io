@@ -45,7 +45,7 @@ d3.csv("data/pilot3/pie_cars_10_g1.csv", function(data) {
     .attr("y", (height / -1.7))
     .attr("text-anchor", "middle")  
     .style("font-size", "20px")
-    .text("Sales in 2012 by Car Types");
+    .text("Sales in 2013 by Car Types");
 
   var g = svg.selectAll(".arc")
     .data(pie(data))

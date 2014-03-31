@@ -220,7 +220,7 @@ d3.csv("data/pilot3/radial_cars_5_g1.csv", function(data) {
     .attr("y", (height / -5.5))
     .attr("text-anchor", "middle")  
     .style("font-size", "20px")
-    .text("Car Models in 2011");
+    .text("Car Models in 2011 for Brand A");
 
   // Axis
   for (j = 0; j < numDimension; j++) {
