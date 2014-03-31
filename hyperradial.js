@@ -271,32 +271,32 @@ d3.csv("data/pilot3/radial_cars_5_g1.csv", function(data) {
   }
 
   // Legend
-  legend = svg.selectAll(".legend")
-    .data(id).enter()
-    .append("g")
-    .attr("class", "legend")
-    .attr("transform", function(d, i) {
-    return "translate(" + margin.left + "," + i * 20 + ")";
-  })
-    .style("fill", function(d, i) {
-    return color(id[i]);
-  })
-    .attr("opacity", 0.7);
+  // legend = svg.selectAll(".legend")
+  //   .data(id).enter()
+  //   .append("g")
+  //   .attr("class", "legend")
+  //   .attr("transform", function(d, i) {
+  //   return "translate(" + margin.left + "," + i * 20 + ")";
+  // })
+  //   .style("fill", function(d, i) {
+  //   return color(id[i]);
+  // })
+  //   .attr("opacity", 0.7);
 
-  legend.append("rect")
-    .attr("x", width - 100)
-    .attr("width", 7)
-    .attr("height", 7);
+  // legend.append("rect")
+  //   .attr("x", width - 100)
+  //   .attr("width", 7)
+  //   .attr("height", 7);
 
-  legend.append("text")
-    .attr("x", width - 100)
-    .attr("y", 5)
-    .attr("dx", 10)
-    .attr("dy", 2)
-    .style("text-anchor", "left")
-    .style("fill", "Black")
-    .text(function(d) {
-    return d;
-  });
+  // legend.append("text")
+  //   .attr("x", width - 100)
+  //   .attr("y", 5)
+  //   .attr("dx", 10)
+  //   .attr("dy", 2)
+  //   .style("text-anchor", "left")
+  //   .style("fill", "Black")
+  //   .text(function(d) {
+  //   return d;
+  // });
 
 });
